@@ -28,33 +28,4 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.appendChild(tip);
     setTimeout(() => document.body.removeChild(tip), 1500);
   }
-
-  // 手机端悬浮目录按钮和弹窗
-  // 依赖 Fluid 主题的 .toc-sidebar 目录内容
-
-  if (window.innerWidth <= 768) {
-    var toc = document.querySelector('.toc-sidebar');
-    if (!toc || !toc.innerHTML.trim()) return;
-
-    // 创建按钮
-    var btn = document.createElement('button');
-    btn.innerHTML = '目录';
-    btn.id = 'mobile-toc-btn';
-    document.body.appendChild(btn);
-
-    // 创建弹窗
-    var popup = document.createElement('div');
-    popup.id = 'mobile-toc-popup';
-    popup.innerHTML = '<div class="mobile-toc-content">' + toc.innerHTML + '</div>';
-    document.body.appendChild(popup);
-
-    // 按钮点击显示/隐藏弹窗
-    btn.onclick = function () {
-      popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
-    };
-    // 点击弹窗外关闭
-    popup.onclick = function (e) {
-      if (e.target === popup) popup.style.display = 'none';
-    };
-  }
 });
