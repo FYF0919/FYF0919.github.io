@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>环境搭建</title>
+    <link href="/2025/07/05/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <url>/2025/07/05/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    
+    <content type="html"><![CDATA[<h1 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h1><p>&#x3D;&#x3D;本人电脑系统为Windows11，以下环境搭建均基于windows系统&#x3D;&#x3D;</p><h2 id="1-ESP-IDF在VScode上安装"><a href="#1-ESP-IDF在VScode上安装" class="headerlink" title="1.ESP-IDF在VScode上安装"></a>1.ESP-IDF在VScode上安装</h2><p>先见已有的<a href="https://www.bilibili.com/opus/787285299640139848?spm_id_from=333.999.0.0">安装教程</a>，其中<code>IDF_TOOLS_PATH</code>在我安装后自动添加到了环境变量。</p><p>报错：<span style="color:red;"><code>ESP32-TOOLS.espressif\tools\idf-python\3.8.7\python.exe -m pip&quot; is not valid. (ERROR_INVALID_PIP)</code></span>。</p><p>我通过<code>cmd</code>来到<code>D:\Espressif\tools\idf-python\3.11.2&gt;</code>后，输入如下命令：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">python -m ensurepip<br>python -m pip install --upgrade pip<br></code></pre></td></tr></table></figure><p>之后便一切顺利了。</p><p>如仍存在问题，可见<a href="https://www.cnblogs.com/FBsharl/p/18256614">VSCode esp-idf环境搭建ERROR_INVALID_PIP错误解决 - FBshark - 博客园</a>。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>计算机科学</category>
+      
+      <category>环境搭建</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>陆奇博士前沿创新趋势分享活动纪要</title>
     <link href="/2025/06/25/%E5%A5%87%E7%BB%A9%E8%AE%BA%E5%9D%9B%E6%B5%99%E5%A4%A7%E8%A1%8C%E6%B4%BB%E5%8A%A8%E7%BA%AA%E8%A6%81/"/>
     <url>/2025/06/25/%E5%A5%87%E7%BB%A9%E8%AE%BA%E5%9D%9B%E6%B5%99%E5%A4%A7%E8%A1%8C%E6%B4%BB%E5%8A%A8%E7%BA%AA%E8%A6%81/</url>
